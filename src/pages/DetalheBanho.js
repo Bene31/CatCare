@@ -27,7 +27,7 @@ export default class DetalheBanho extends Component {
       if (doc.exists) {
         this.setState({
           content: doc.data(),
-          id: id,
+          id: doc.id,
           isLoading: false
         });
       } else {
